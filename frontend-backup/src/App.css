@@ -1,0 +1,147 @@
+.App {
+  min-height: 117rem;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+.heading--2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-font-2);
+  text-transform: uppercase;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.btn,
+.btn--small,
+.btn--small:link,
+.btn--small:visited {
+  padding: 1.3rem 3rem;
+  font-size: 1.4rem;
+  background: var(--color-primary);
+  border-radius: 10rem;
+  border: none;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.btn--small:link svg,
+.btn--small:visited svg,
+.btn--small svg {
+  height: 1.75rem;
+  width: 1.75rem;
+  fill: currentColor;
+}
+
+.btn--round {
+  background: var(--color-primary);
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  height: 4.5rem;
+  width: 4.5rem;
+  transition: all 300ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn--round svg {
+  height: 2.5rem;
+  width: 2.5rem;
+  fill: #fff;
+}
+
+.btn--inline {
+  color: var(--color-font-2);
+  font-size: 1.3rem;
+  font-weight: 600;
+  border: none;
+  background-color: #f9f5f3;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: all 300ms;
+}
+
+.btn svg {
+  height: 2.25rem;
+  width: 2.25rem;
+  fill: currentColor;
+}
+.btn--small > :first-child,
+.btn > :first-child {
+  margin-right: 1rem;
+}
+
+.btn--small:hover,
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn--inline:hover {
+  background-color: #f2efee;
+}
+
+.btn--inline svg {
+  height: 1.6rem;
+  width: 1.6rem;
+  fill: currentColor;
+  margin: 0 0.2rem;
+}
+
+.btn-next {
+  float: right;
+}
+
+.btn-prev {
+  float: left;
+}
+
+.btn--small,
+.btn--small:link,
+.btn--small:visited {
+  font-size: 1.4rem;
+  font-weight: 600;
+  padding: 1.25rem 2.25rem;
+  text-decoration: none;
+}
+
+.btn--tiny {
+  height: 2rem;
+  width: 2rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btn--tiny:not(:last-child) {
+  margin-right: 0.3rem;
+}
+
+.btn--tiny svg {
+  height: 100%;
+  width: 100%;
+  fill: var(--color-svg);
+  transition: all 300ms;
+}
+
+@media (max-width: 75em) {
+  .App {
+    border-radius: 0;
+  }
+}

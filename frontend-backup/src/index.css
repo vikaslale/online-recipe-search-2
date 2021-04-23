@@ -1,0 +1,79 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+*:root {
+  --color-primary: linear-gradient(to right bottom, #fbdb89, #f48982);
+  --color-primary-1: #fbdb89;
+  --color-primary-2: #f48982;
+  --color-primary-3: #f38e82;
+
+  --color-grey-light-1: #f9f5f3;
+  --color-grey-light-2: #f2efee;
+  --color-grey-light-3: #dad0cc;
+
+  --color-font-1: #615551;
+  --color-font-2: #f38e82;
+
+  --color-svg: #f38e82;
+
+  --box-shadow: 0 0 3rem rgba(101, 90, 86, 0.08);
+  --box-shadow-2: 0 2px 4px 0 rgba(48, 56, 97, 0.2);
+  --box-shadow-3: 0 0 4rem 0 rgba(48, 56, 97, 0.4);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  color: var(--color-font-1);
+  font-weight: 400;
+  box-sizing: border-box;
+  padding: 5rem;
+  background: linear-gradient(
+      to right bottom,
+      rgb(251, 219, 137, 0.6),
+      rgb(244, 137, 130, 0.6)
+    ),
+    url("./img/Recipe_Bg_Main.jpg");
+  background-size: contain;
+}
+
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media (max-width: 56.26em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+@media (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,37 @@
+.modal__content {
+  border-radius: 10px;
+  box-shadow: var(--box-shadow-3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  overflow: hidden;
+  opacity: 1;
+  transition: all 200ms;
+}
+
+.modal {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 10000;
+  opacity: 1;
+  visibility: visible;
+  backdrop-filter: blur(10px);
+}
+
+.modal__close {
+  height: 2rem;
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  fill: orangered;
+  cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.imageSmall__figure {
+  flex: 0 0 5.8rem;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 5.8rem;
+
+  position: relative;
+  backface-visibility: hidden;
+}
+
+.imageSmall__figure img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 300ms;
+}
+
+.imageSmall__figure::before {
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--color-primary);
+  opacity: 0.4;
+}
